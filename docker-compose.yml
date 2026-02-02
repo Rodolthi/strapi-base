@@ -22,9 +22,9 @@ services:
     ports:
       - 1337:1337
     networks:
-      - net_swarm
+      - pg-network
 
 networks:
-  net_swarm:
+  pg-network:
     driver: overlay
     external: true
