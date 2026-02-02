@@ -2,10 +2,6 @@ services:
   strapi:
     build: .
     image: strapi-treinamentos:latest
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_HOST: ${DATABASE_HOST}
