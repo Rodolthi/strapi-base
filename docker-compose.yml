@@ -1,7 +1,7 @@
 services:
   strapi:
     build: .
-    image: strapi-treinamentos:latest
+    image: ${ECR_TREINAMENTOS_IMAGE}:${TAG_IMAGE}
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_HOST: ${DATABASE_HOST}
