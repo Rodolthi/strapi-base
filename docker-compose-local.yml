@@ -8,7 +8,7 @@ services:
         condition: on-failure
     env_file: .env
     volumes:
-      - ./strapi-base/public/uploads:/opt/app/public/uploads
+      - ./public/uploads:/opt/app/public/uploads
     ports:
       - 1337:1337
     networks:
